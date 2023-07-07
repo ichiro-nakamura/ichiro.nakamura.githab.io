@@ -1,0 +1,380 @@
+/* 背景 */
+.background{
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'  
+}
+
+
+
+
+
+/* 最初の動画 */
+iframe{
+  text-align: center;
+  height: 1000px;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+/* 曲紹介 */
+.title1{
+  color: #000000;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+
+
+
+
+/* メンバー紹介 */
+.title2{
+  color: #000000;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+/* 写真スライド */
+.title3{
+  color: #000000;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width:94%;
+  margin:0 auto;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#ffffff;/*ドットボタンの現在地表示の色*/
+}
+
+
+
+
+
+/* MV拡張 */
+.more-toggle,
+.hidden-content {
+  display: none;
+}
+
+.more-toggle:checked ~ .hidden-content {
+  display: block;
+}
+
+.more-button {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.3s;
+}
+
+.more-button::before {
+  content: 'もっと見る';
+}
+
+.more-toggle:checked ~ .more-button::before {
+  content: '閉じる';
+}
+
+.more-button:hover {
+  opacity: 0.7;
+}
+
+.more-button:active {
+  opacity: 0.4;
+}
+
+.addmv{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.addmv img{
+  width: 30%;
+  height: 30%;
+}
+
+
+
+
+
+/* メンバー紹介 */
+.box1{
+  padding: 8px 19px;
+  margin: 0 auto;
+  color: #000000;
+  background: #fefefe;
+  border-top: solid 10px #ff0000;
+  border-bottom: solid 10px #0000ff;
+  border-left:solid 10px #0000ff;
+  border-right: solid 10px #ff0000;
+  display: flex;
+  width: 60%;
+  height: fit-content;
+}
+
+.box1 p {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.box11{
+  flex-wrap: wrap;
+}
+
+.box2{
+  padding: 8px 19px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #000000;
+  background: #fefefe;
+  border-top: solid 10px #ff0000;
+  border-bottom: solid 10px #0000ff;
+  border-left:solid 10px #0000ff;
+  border-right: solid 10px #ff0000;
+  display: flex;
+  width: 60%;
+  height: fit-content;
+}
+
+.box2 p {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.box22{
+  flex-wrap: wrap;
+}
+
+.box3{
+  padding: 8px 19px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #000000;
+  background: #fefefe;
+  border-top: solid 10px #ff0000;
+  border-bottom: solid 10px #0000ff;
+  border-left:solid 10px #0000ff;
+  border-right: solid 10px #ff0000;
+  display: flex;
+  width: 60%;
+  height: fit-content;
+}
+
+.box3 p {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.box33{
+  flex-wrap: wrap
+}
+
+.box4{
+  padding: 8px 19px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: #000000;
+  background: #fefefe;
+  border-top: solid 10px #ff0000;
+  border-bottom: solid 10px #0000ff;
+  border-left:solid 10px #0000ff;
+  border-right: solid 10px #ff0000;
+  display: flex;
+  width: 60%;
+  height: fit-content;
+}
+
+.box4 p {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+}
+
+.box44{
+
+  flex-wrap: wrap;
+
+}
+
+.position{
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #000000;
+  font-size: 30px;
+}
+
+
+
+
+
+/* 動画紹介 */
+
+.mvkukuru{
+  text-align: center;
+}
+
+.mv{
+  width: 500px;
+  height: 250px;
+  margin-top: 30px;
+}
+
+
+
+
+/* ヘッダー */
+body {
+  padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+}
+
+header {
+  width: 100%; /* 幅いっぱいを指定 */
+  height: 150px; /* 高さを50pxに指定 */
+  background: #00a6b8; /* 背景色にグレーを指定 */
+  padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+  box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  top: 0; /* 上下の固定位置を上から0pxにする */
+  left: 0; /* 左右の固定位置を左から0pxにする */
+  display: flex; /* 中の要素を横並びにする */
+  align-items: center; /* 中の要素を上下中央に並べる */
+  z-index: 999999999;
+}
+
+header .gnav .menu {
+  display: flex; /* 中の要素を横並びにする*/
+}
+
+header .gnav .menu li {
+  list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+  margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+} 
+
+.header{
+ display: flex;
+ margin: 0 auto;
+}
+
+.headerin{
+  display: flex;
+  margin-left: 40px;
+}
+
+.headerin1{
+  margin: 0 auto;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.logo{
+  margin-top: 0px;
+  margin-left: 40px;
+  z-index: 9999999999999999;
+}
+
+.logo img {
+  width: 50%;
+  height: 50%;
+}
+
+.hikousiki{
+  font-size: 20px;
+}
