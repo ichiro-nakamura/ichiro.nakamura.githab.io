@@ -1,0 +1,104 @@
+
+.sikaku{
+    width: 325px;
+    height:0 auto;
+    background-color: rgb(29, 209, 249);
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20PX;  
+}
+
+
+.sikaku2{
+    width: auto;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto;
+    color: red;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+  }
+
+  .box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 10px #000000;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    padding: 15px;;
+   
+      
+  }
+
+  /* .animation{
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+    width: fit-content;
+  }
+  
+  .keyframe2{
+    animation-name: anim_h;
+  }
+  
+  @keyframes anim_h {
+    0% {
+      transform: translate(0px, 0);
+    }
+    100% {
+      transform: translate(15px, 0);
+    }
+  } */
+
+
+  .box2 {
+    padding: 0.5em 0.5em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 10px #000000;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+ }
+
+  .box2 p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .midasi {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 20px;;
+    font-family: "MS Mincho";
+}
+
+.hart{
+  display: flex;
+  width: 100%;
+}
+
+
+
+iframe{
+  text-align: center;
+  height: 1000px;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
